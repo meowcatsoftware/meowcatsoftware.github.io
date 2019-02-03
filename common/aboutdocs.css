@@ -1,0 +1,42 @@
+header {
+	size: 100%;
+	background-color: #00AAFF;
+	text-align: center;
+	border-width: 10px;
+	border-style: solid;
+	border-radius: 6px;
+}
+
+#header-h1 {
+	color: #00EEFF;
+}
+
+#header-p {
+	color: #00EEFF;
+	text-align: left;
+}
+
+nav {
+	text-align: center;
+}
+
+#nav-a {
+	color: #000000;
+}
+
+article {
+	border: 4px solid black;
+	border-radius: 6px;
+}
+
+#article-h1 {
+	align: center;
+}
+
+footer{
+	size: 100%;
+	background-color: #00AAFF;
+	text-align: center;
+	border-width: 10px;
+	border-style: solid;
+}
