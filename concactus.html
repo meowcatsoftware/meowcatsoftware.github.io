@@ -2,7 +2,8 @@
 <html>
 <head>
 	<link rel="stylesheet" href="common\main.css" />
-	<title>MeowcatSoftware: Easter Egg #1</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>MCat ConCactus: Index</title>
 	<meta name="description" content="Official website for the independant software development team MeowcatSoftware." />
 	<meta name="author" content="Meowcat McMeow XVIII" />
 	<meta name="keywords" content="HTML, meow, meowcat, meowcatsoftware, software, cat, programming, development, C#" />
@@ -10,17 +11,30 @@
 <body class="container">
 	<header>
 		<h1 font="Times New Roman" id="header-h1">MeowcatSoftware</h1>
-		<nav>
-		<a href="./index.html">{ Home</a> |
-		<a href="./about.html">About</a> |
-		<a href="./projects.html">Projects</a> |
-		<a href="./contact.html">Contact Us }</a>
-		</nav>
+			<div class="topnav" id="myTopnav">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="projects.html">Projects</a>
+				<a href="contact.html">Contact Us</a>
+				<a href="#too_tempted_are_you?" class="active">ConCactus</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+			</div>
 	</header>
+	
+	<script id="top-nav" type="text/javascript">
+	function siteNav() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+	</script>
 	<section>
 		<article>
-			<h1>Easter Egg #1</h1>
-			<p />I wanted to implement a few stupid easter eggs into the website to add an element of fun. This is the first of them. I called it "concactus.html" because someone might end up accidentally typing that in instead of "contactus.html". Here's a random picture of a cactus. You know, because it's a <i>ConCactus</i>.
+			<h1>Coming Soon...</h1>
+			<p />Project ConCactus is coming soon to MeowcatSoftware. Contact us if you want details, there's a reason this ain't on the projects page.
 			<br />
 			<img src="imgs/concactus.jpg" alt="A random picture of a cactus that I found using Google Images." />
 		</article>

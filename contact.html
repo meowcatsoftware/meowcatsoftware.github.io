@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="common\main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>MeowcatSoftware: Contact Us</title>
 	<meta name="description" content="Official website for the independant software development team MeowcatSoftware." />
 	<meta name="author" content="Meowcat McMeow XVIII" />
@@ -10,13 +11,26 @@
 <body class="container">
 	<header>
 		<h1 font="Times New Roman" id="header-h1">MeowcatSoftware</h1>
-		<nav>
-		<a href="./index.html">{ Home</a> |
-		<a href="./about.html">About</a> |
-		<a href="./projects.html">Projects</a> |
-		<a href="./contact.html">Contact Us }</a>
-		</nav>
+			<div class="topnav" id="myTopnav">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="projects.html">Projects</a>
+				<a href="#what_ever_you_do_dont_click_concactus" class="active">Contact Us</a>
+				<a href="concactus.html">ConCactus</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+			</div>
 	</header>
+	
+	<script id="top-nav" type="text/javascript">
+	function siteNav() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+	</script>
 	<section>
 		<article>
 			<h1>Contact Us</h1>

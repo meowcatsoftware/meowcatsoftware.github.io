@@ -2,32 +2,80 @@
 <html>
 <head>
 	<link rel="stylesheet" href="common\main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>MeowcatSoftware: Home</title>
 	<meta name="description" content="Official website for the independant software development team MeowcatSoftware." />
 	<meta name="author" content="Meowcat McMeow XVIII" />
 	<meta name="keywords" content="HTML, meow, meowcat, meowcatsoftware, software, cat, programming, development, C#" />
 </head>
+
 <body class="container">
+
+	<div id="underConstructionNotice" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h1 align="center">Please Note:</h1>
+			<p />Please note that this website is under construction. Don't get confused if you encounter mysterious looking cacti or Latin-speaking webpages. Just don't make direct eye contact and you'll be fine.
+			<br />
+			<p />Best regards,
+			<br />
+			<p /><i><b>Meowcat McMeow XVIII, MeowcatSoftware Lead Developer</b></i>
+		</div>
+	</div>
+	
 	<header>
 		<h1 font="Times New Roman" id="header-h1">MeowcatSoftware</h1>
-		<nav>
-		<a href="./index.html">{ Home</a> |
-		<a href="./about.html">About</a> |
-		<a href="./projects.html">Projects</a> |
-		<a href="./contact.html">Contact Us }</a>
-		</nav>
+			<div class="topnav" id="myTopnav">
+				<a href="#what_ever_you_do_dont_click_concactus" class="active">Home</a>
+				<a href="about.html">About</a>
+				<a href="projects.html">Projects</a>
+				<a href="contact.html">Contact Us</a>
+				<a href="concactus.html">ConCactus</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+			</div>
 	</header>
+	
+	<script id="top-nav" type="text/javascript">
+	function siteNav() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+	</script>
+	
+	<script id="system-msg" type="text/javascript">
+var modal = document.getElementById('underConstructionNotice');
+
+var span = document.getElementsByClassName("close")[0];
+ 
+onload = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+	</script>
+	
 	<section>
 		<article id="notice">
-			<h1>Stay tuned...</h1>
-			<p />This website is currently under construction. If you would like to know the status of the website's development, send an email to <a href="mailto:meowcat.main@gmail.com">Meowcat McMeow XVIII</a>. He'll be happy to help you.
-			<br />
-			<h1>Update</h1>
-			<p />Most of the links should be working now. Once everything else is done, I'll start putting stuff here that's actually useful. That shouldn't be too long I think.
+			<h1>Welcome to MeowcatSoftware</h1>
+			<p />It's finally here: MeowcatSoftware's new home. Aren't you excited? I know I am! There's just 2 more problems that I need to fix, and those would be the lack of text to put here, and the fact that the projects page decided to start speaking in Latin. I have to teach him English all over again, which really burns my toast. Feel free to look around the skeleton of a website we have right now, all of the links you see on this page are working completely now (or should be, at least.) Enjoy yourself!
 		</article>
 	</section>
+	
 	<footer>
 		<p id="footer-text" /> Website is property of MeowcatSoftware and available under GNU GPL v3.0, see <a href="license.html">the license page</a> for all the terms.
 	</footer>
+	
 </body>
 </html>
